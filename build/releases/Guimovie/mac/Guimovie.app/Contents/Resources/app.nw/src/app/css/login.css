@@ -1,0 +1,212 @@
+
+
+
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+#login p {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+.container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+  width: 280px;
+
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  color: #606468;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#login form input {
+  height: 50px;
+}
+
+#login form input[type="text"], input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #606468;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 230px;
+}
+
+
+/* animation for submit */
+
+#login form input[type=submit] {
+  width: 280px;
+  height: 50px;
+  color: #eee;
+  -webkit-border-radius: 3px;
+  background-color: #de5362;;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+#login form input[type=submit]:hover {
+  background-color: #de5362;;
+}
+#login form input[type=submit]:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+
+#login form input[type=submit].spinning {
+  position: relative;
+  width: 50px;
+  font-size: 0;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background: 0;
+  -webkit-animation: spinner .2s infinite;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* Classes for the different styles */
+.spinning.inset {
+  -webkit-box-shadow: inset 3px 3px 3px #de5362;
+}
+
+.spinning.outset {
+  -webkit-box-shadow: 3px 3px 3px #de5362;
+}
+
+
+/* animation for submit */
+
+
+
+
+#login > p {
+  text-align: center;
+}
+
+#login > p span {
+  padding-left: 5px;
+}
+/* footer */
+.footer-login {
+  margin-top:20px;
+  padding-top:10px;
+  height:65px;
+
+}
+.social-links {
+  list-style:none;
+}
+.social-links li{
+  float:left;
+  width: 33%;
+}
+.social-links li a{
+  display:block;
+  width:45px;
+  height:45px;
+  margin-right:15px;
+}
+.social-links li a span{
+  display:block;
+  text-indent:-9999px;
+  margin-left:20px;
+  width:45px;
+  height:45px;
+}
+.social-links li a:hover span{ opacity:0.5;  }
+.social-links li.facebook a span{
+  background-image:url(../images/login/facebook.png);
+  border-radius: 50px;
+}
+.social-links li.twitter a span{
+  background-image:url(../images/login/twitter.png);
+  border-radius: 50px;
+}
+.social-links li.google-plus a span{
+  background-image:url(../images/login/google.png);
+  border-radius: 50px;
+}
+
+.login{
+    background: #2c3338;
+    background-image: url(../images/background.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.login-logo{
+    margin-bottom: 20px !important
+}
+
+#login{
+  position: absolute;
+  margin: auto;
+  top: -190px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+}
+
+#login p{
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: grey;
+  font-size: 14px;
+}

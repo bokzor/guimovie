@@ -1,0 +1,53 @@
+{
+    "webexe_settings": {
+        "linux-x32": false,
+        "windows-x64": false,
+        "download_dir": "/Users/adrienbokor/Downloads/Web2Executable.app/Contents/Resources/files/downloads",
+        "nw_compression_level": 5,
+        "mac-x32": false,
+        "windows-x32": false,
+        "mac-x64": false,
+        "nw_version": "0.11.6",
+        "force_download": false,
+        "linux-x64": false
+    },
+    "js-flags": "",
+    "name": "app",
+    "single-instance": true,
+    "nodejs": true,
+    "description": "",
+    "additional_trust_anchors": "",
+    "user-agent": "",
+    "inject-js-end": "",
+    "keywords": [],
+    "window": {
+        "fullscreen": false,
+        "resizable": false,
+        "title": "app",
+        "always-on-top": false,
+        "frame": true,
+        "transparent": false,
+        "height": 480,
+        "exe_icon": "",
+        "visible": true,
+        "as_desktop": false,
+        "position": "",
+        "show_in_taskbar": true,
+        "mac_icon": "",
+        "width": 640,
+        "toolbar": false,
+        "icon": ""
+    },
+    "version": "0.0.1",
+    "snapshot": "",
+    "node-main": "",
+    "webkit": {
+        "page-cache": false,
+        "java": false,
+        "plugin": false
+    },
+    "inject-js-start": "",
+    "node-remote": "",
+    "main": "index.html",
+    "chromium-args": ""
+}

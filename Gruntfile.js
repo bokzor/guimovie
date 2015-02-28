@@ -72,17 +72,17 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('dist', [
-        'clean:releases',
-        'clean:dist',
-        'clean:update',
-        'build',
+        //'clean:releases',
+        //'clean:dist',
+        //'clean:update',
+        //'build',
         'exec:codesign', // mac
         'exec:createDmg', // mac
-        'exec:createWinInstall',
-        'exec:pruneProduction',
-        'exec:createLinuxInstall',
-        'exec:createWinUpdate',
-        'package' // all platforms
+        //'exec:createWinInstall',
+        //'exec:pruneProduction',
+        //'exec:createLinuxInstall',
+        //'exec:createWinUpdate',
+        //'package' // all platforms
     ]);
 
 
@@ -345,7 +345,7 @@ module.exports = function(grunt) {
                     if (host.linux || host.mac) {
                         return [
                             'cd build/releases/Guimovie/mac/',
-                            'tar --exclude-vcs -c Guimovie.app | $(command -v pxz || command -v xz) -T8 -7 > "Guimovie-' + currentVersion + '-Mac.tar.xz"',
+                            'tar -c Guimovie.app | $(command -v pxz || command -v xz) -T8 -7 > "Guimovie-' + currentVersion + '-Mac.tar.xz"',
                             'echo "Mac Sucessfully packaged" || echo "Mac failed to package"'
                         ].join(' && ');
                     } else {
