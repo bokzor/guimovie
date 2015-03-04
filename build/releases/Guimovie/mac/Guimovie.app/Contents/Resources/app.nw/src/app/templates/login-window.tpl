@@ -22,7 +22,7 @@
 				<p><input class="spinner-submit inset" type="submit" id="signupAction" value="<%= i18n.__('Sign up') %>"></p>
 			</fieldset>
 		</form>
-		<p><%= i18n.__('Allready a member') %> ? <a id="loginView"><%= i18n.__('Login now') %></a><span class="fontawesome-arrow-right"></span></p>
+		<p><%= i18n.__('Not a member') %> ? <a id="loginView"><%= i18n.__('Login now') %></a><span class="fontawesome-arrow-right"></span></p>
 	</div>
 	<div class="footer-login">
 		<ul class="social-links">

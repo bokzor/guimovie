@@ -28,14 +28,14 @@
 
             var authData = this.ref.getAuth();
             if (authData) {
-                this.loginSuccess();
+                // this.loginSuccess();
             }
 
             this.ref.onAuth(function(authData) {
                 if (authData) {
                     // save the user's profile into Firebase so we can list users,
                     // use them in Security and Firebase Rules, and show profiles
-                    if (authData.provider !== 'twitter') {
+                    if (authData.provider !== 'twitter' && authData.provider !== 'password') {
                         that.ref.child('users').child(authData.uid).set({
                             provider: authData.provider,
                             name: getName(authData),
@@ -145,12 +145,13 @@
             var email = $('#emailSignup').val();
             var password = $('#passwordSignup').val();
             var that = this;
-            $("#loginAction").toggleClass('spinning');
+            $("#signupAction").toggleClass('spinning');
             this.ref.createUser({
                 email: email,
                 password: password
             }, function(error, userData) {
                 if (error) {
+                    $("#signupAction").toggleClass('spinning');
                     switch (error.code) {
                         case 'EMAIL_TAKEN':
                             alert('Email déja enregistré');

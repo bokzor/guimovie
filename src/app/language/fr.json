@@ -408,13 +408,17 @@
     "Retry": "Retry",
     "ended": "ended",
     "returning series": "returning series",
-    "in production": "en production",
-    "Sign up now": "S'inscrire maintenant",
-    "Not a member": "Pas encore membre",
-    "Initializing Guimovie. Please Wait...": "Chargement de Guimovie. Merci de patienter...",
+    "undefined": "undefined",
+    "": "",
+    "in production": "in production",
+    "Sign up now": "Inscrivez-vous",
+    "Vous n'êtes pas membre": "Not a member",
+    "Not a member": "Pas encore inscrit",
+    "Initializing Guimovie. Please Wait...": "Guimovie se lance. Merci de patienter...",
     "Confirmation": "Confirmation",
     "Inscription": "Inscription",
-    "Sign up": "S'inscrire",
+    "Sign up": "Inscription",
     "Email": "Email",
-    "Login now": "Se connecter"
+    "Login now": "Connectez-vous ",
+    "Already a member": "Déjà inscrit"
 }

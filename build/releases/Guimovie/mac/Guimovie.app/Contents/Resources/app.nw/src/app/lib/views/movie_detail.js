@@ -239,9 +239,12 @@
         },
 
         changeQuality: function() {
-            var quality = $('input[name="quality"]:checked').val();
-            this.model.set('quality', quality);
-            App.vent.emit('qualitychange');
+            var that = this;
+            setTimeout(function() {
+                var quality = $('input[name="quality"]:checked').val();
+                console.log(quality);
+                that.model.set('quality', quality);
+            }, 0);
 
         },
 

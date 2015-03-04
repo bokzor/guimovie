@@ -146,8 +146,7 @@
         readStream.on('end', function() {
             hash.end();
             if (
-                self.updateData.checksum !== hash.read().toString('hex') ||
-                verify.verify(VERIFY_PUBKEY, self.updateData.signature, 'base64') === false
+                self.updateData.checksum !== hash.read().toString('hex')
             ) {
                 defer.reject('invalid hash or signature');
             } else {
